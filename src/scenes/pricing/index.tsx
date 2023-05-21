@@ -66,7 +66,7 @@ const Pricing = ({ setSelectedPage }: Props) => {
                     </div>
                     <h2 className="my-5 text-sm">Monthly</h2>
                     <ul className="my-5 text-sm">
-                        <li className="my-5 text-sm">$ 25 pm</li>
+                        <li className="my-5 text-sm">$25</li>
                         <li className="my-5 text-sm">
                         Access to strength + cardio
                         </li>
@@ -96,7 +96,7 @@ const Pricing = ({ setSelectedPage }: Props) => {
                     </div>
                     <h2 className="my-5 text-sm">Quaterly</h2>
                     <ul className="break-normal my-5 text-sm">
-                        <li className="my-5 text-sm">$75 quaterly</li>
+                        <li className="my-5 text-sm">$75</li>
                         <li className="my-5 text-sm">
                         Strength+Cardio+Yoga
                         </li>
@@ -126,7 +126,7 @@ const Pricing = ({ setSelectedPage }: Props) => {
                     </div>
                     <h2 className="my-5 text-sm ">Yearly</h2>
                     <ul className="break-normal my-5 text-sm">
-                        <li className="my-5 text-sm">$300 yearly</li>
+                        <li className="my-5 text-sm">$300</li>
                         <li className="my-5 text-sm">Access to all Classes</li>
                     </ul>
                     <h3 className="my-5 text-sm">Free Personal Trainer</h3>
