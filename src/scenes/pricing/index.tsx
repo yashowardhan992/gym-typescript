@@ -3,13 +3,7 @@ import { SelectedPage } from '@/shared/types';
 import { motion } from 'framer-motion';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-const container = {
-    hidden: {},
-    visible: {
-      transition: { staggerChildren: 0.2 },
-    },
-  };
-  
+
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
@@ -47,9 +41,14 @@ const Pricing = ({ setSelectedPage }: Props) => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            variants={container}
+            transition={{duration:0.5}}
+            variants = {{
+              hidden : {opacity : 0 , x:-50},
+              visible : {opacity : 1, x : 0},
+
+          }}
         >
-					<div 
+					        <div 
                     className="items-center justify-center rounded-lg
                     text-center border-gray-100 mb-12 bg-white p-4 break-normal shadow-md hover:shadow-xl
                     transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
@@ -79,7 +78,7 @@ const Pricing = ({ setSelectedPage }: Props) => {
                     >
                         <p>Learn More</p>
                     </AnchorLink>
-                    </div>
+                  </div>
 
                 
                     <div className="items-center rounded-lg bg-white justify-center
